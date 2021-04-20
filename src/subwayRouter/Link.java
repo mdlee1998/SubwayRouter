@@ -35,7 +35,7 @@ public class Link {
 	} 
 	
 	/**
-	 * Creates an empty link
+	 * Creates an empty link for the router
 	 */
 	protected Link() {
 		this.from = null;
@@ -61,7 +61,7 @@ public class Link {
 	
 	/**
 	 * Gets the color identifier of the line
-	 * @return color field
+	 * @return The color field
 	 */
 	protected String getColor() {
 		return color;
