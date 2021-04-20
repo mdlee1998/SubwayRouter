@@ -80,19 +80,15 @@ public class Router {
 		if(map.containsKey(from)) {
 			//Gets list already at that key
 			list = map.get(from);
-			//If the list does not contain the new 
-			//destination, add it to the list
-			if(!list.contains(link)) {
-				list.add(link);
-			}
-		}
-		//If the from is a new key
-		else {
+		} else {
 			list = new ArrayList<Link>();
-			if(!list.contains(link)) {
-				list.add(link);
-			}
 		}
+		//If the list does not contain the new 
+		//destination, add it to the list
+		if(!list.contains(link)) {
+			list.add(link);
+		}
+		
 		map.put(from, list);
 	}
 	
