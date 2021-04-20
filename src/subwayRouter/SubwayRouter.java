@@ -49,8 +49,7 @@ public class SubwayRouter {
 				ask = false;
 				System.exit(0);
 			}
-			String directions = r.findRoute(from, to);
-			System.out.println(directions);
+			System.out.println(r.findRoute(from, to));
 		}
 	}
 }
